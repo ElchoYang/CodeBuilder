@@ -67,6 +67,7 @@ namespace CodeHelper
             }
             else
             {
+                content.Append("\t[Serializable()]\r\n");
                 content.AppendFormat("\tpublic class {0}\r\n", model.TableName.ToFirstUpper());
             }
 
@@ -148,7 +149,8 @@ namespace CodeHelper
                     {
                         content.Append($"\t\t[MyPrimaryId]\r\n");
                     }
-                    content.AppendFormat("\t\tpublic {0} {1} ", GetFormatString(item.DBType), item.ColumnName.ToFirstUpper());
+                    //content.AppendFormat("\t\tpublic {0} {1} ", GetFormatString(item.DBType), item.ColumnName.ToFirstUpper());
+                    content.AppendFormat("\t\tpublic {0} {1} ", GetFormatString(item.DBType), item.ColumnName.ToAllFirstUpper());
                     content.AppendLine("{ get; set; }");
                 }
 
@@ -199,13 +201,17 @@ namespace CodeHelper
                 case "tinyint":
                 case "smallint":
                     return "int";
+                case "bigint":
+                    return "long";
                 case "varchar":
                 case "xml":
                 case "char":
                 case "nvarchar":
+                case "nchar":
                 case "text":
                     return "string";
                 case "datetime":
+                case "smalldatetime":
                 case "time":
                 case "date":
                 case "timestamp":
@@ -242,10 +248,12 @@ namespace CodeHelper
                     return "0";
                 case "varchar":
                 case "char":
+                case "nchar":
                 case "nvarchar":
                 case "text":
                     return "string.Empty";
                 case "datetime":
+                case "smalldatetime":
                 case "time":
                 case "date":
                 case "timestamp":
@@ -259,5 +267,6 @@ namespace CodeHelper
                     return "string.Empty";
             }
         }
+         
     }
 }

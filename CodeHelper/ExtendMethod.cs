@@ -38,6 +38,32 @@ namespace CodeHelper
             }
         }
 
+        public static string ToAllFirstUpper(this string key)
+        {
+            if (key == null)
+            {
+                return null;
+            }
+            else if (key.Length == 0)
+            {
+                return key;
+            }
+            else
+            {
+                if (key.IndexOf("_") > -1)
+                {
+                    var sp = key.Split('_');
+                    StringBuilder ss = new StringBuilder();
+                    foreach (var str in sp)
+                    {
+                       ss.Append(str[0].ToString().ToUpper() + str.Substring(1));
+                    }
+                    key = ss.ToString();
+                }
+                return key[0].ToString().ToUpper() + key.Substring(1, key.Length - 1);
+            }
+        }
+
         public static string ToCharpCodeShow(this string key)
         {
             string[] keys = { "abstract", "event", "new", "struct", "as", "explicit", "null", "switch", "base", "extern", "object", "this", "bool", "false", "operator", "throw", "break", "finally", "out", "true", "byte", "fixed", "override", "try", "case", "float", "params", "typeof", "catch", "for", "private", "uint", "char", "foreach", "protected", "ulong", "checked", "goto", "public", "unchecked", "class", "if", "readonly", "unsafe", "const", "implicit", "ref", "ushort", "continue", "in", "return", "using", "decimal", "int", "sbyte", "virtual", "default", "interface", "sealed", "volatile", "delegate", "internal", "short", "void", "do", "is", "sizeof", "while", "double", "lock", "stackalloc", "else", "long", "static", "enum", "namespace", "string", "get", "partial", "set", "value", "where-yield" };

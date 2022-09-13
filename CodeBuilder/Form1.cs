@@ -22,7 +22,7 @@ namespace CodeBuilder
 {
     public partial class Form1 : Form
     {
-        public string DbComStr = "PDM";
+        public string DbComStr = "SQLServer";
         PdmModels models;
         public Form1()
         {
@@ -146,6 +146,7 @@ namespace CodeBuilder
                         }
                         if (true)
                         {
+                            tableName = tableName.Replace("T_", "");
                             tableName = tableName.Replace("_", "");
                         }
                         BuilderCode(tableName, nameSpace, path, dt);
@@ -212,8 +213,8 @@ namespace CodeBuilder
             TableHelper helper = new TableHelper(false, false, false);
             NormalModel model = new NormalModel();
             model.NameSpace = nameSpace;
-            model.TableName = className;
-            model.Title = className;
+            model.TableName = className + "Entity"; //+ "Model";
+            model.Title = className + " Table";
             // model.SearchColumnsStr
             List<CodeModel.ColumnInfo> list = new List<CodeModel.ColumnInfo>();
             foreach (DataRow row in dt.Rows)
@@ -226,7 +227,7 @@ namespace CodeBuilder
             }
             model.ColumnList = list;
             string content = helper.GetClassString(model);
-            string fileName = filePath + className + ".cs";
+            string fileName = filePath + model.TableName + ".cs";
             using (FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate))
             {
                 byte[] buffer = Encoding.UTF8.GetBytes(content);
@@ -332,5 +333,7 @@ namespace CodeBuilder
                 lbTableList.SetSelected(i, false);
             }
         }
+
+       
     }
 }

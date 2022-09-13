@@ -62,9 +62,9 @@
             // 
             // btConnection
             // 
-            this.btConnection.Location = new System.Drawing.Point(924, 277);
+            this.btConnection.Location = new System.Drawing.Point(924, 308);
             this.btConnection.Name = "btConnection";
-            this.btConnection.Size = new System.Drawing.Size(176, 41);
+            this.btConnection.Size = new System.Drawing.Size(176, 46);
             this.btConnection.TabIndex = 0;
             this.btConnection.Text = "连接";
             this.btConnection.UseVisualStyleBackColor = true;
@@ -73,75 +73,76 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 24);
+            this.label1.Location = new System.Drawing.Point(3, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 18);
+            this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "服务器：";
             // 
             // txtService
             // 
-            this.txtService.Location = new System.Drawing.Point(99, 14);
+            this.txtService.Location = new System.Drawing.Point(99, 16);
             this.txtService.Name = "txtService";
-            this.txtService.Size = new System.Drawing.Size(379, 28);
+            this.txtService.Size = new System.Drawing.Size(379, 26);
             this.txtService.TabIndex = 2;
-            this.txtService.Text = "192.168.199.101\r\n";
+            this.txtService.Text = "ecnnjmw0023.ericsson.se";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 134);
+            this.label2.Location = new System.Drawing.Point(3, 149);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "密码：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 82);
+            this.label3.Location = new System.Drawing.Point(3, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 18);
+            this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "登录名：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 335);
+            this.label4.Location = new System.Drawing.Point(9, 372);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 18);
+            this.label4.Size = new System.Drawing.Size(89, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "命名空间：";
             // 
             // txtNamespace
             // 
-            this.txtNamespace.Location = new System.Drawing.Point(146, 335);
+            this.txtNamespace.Location = new System.Drawing.Point(146, 372);
             this.txtNamespace.Name = "txtNamespace";
-            this.txtNamespace.Size = new System.Drawing.Size(379, 28);
+            this.txtNamespace.Size = new System.Drawing.Size(379, 26);
             this.txtNamespace.TabIndex = 6;
+            this.txtNamespace.Text = "LASeStamp.App_Service.Code.Entity";
             // 
             // txtPwd
             // 
-            this.txtPwd.Location = new System.Drawing.Point(99, 124);
+            this.txtPwd.Location = new System.Drawing.Point(99, 138);
             this.txtPwd.Name = "txtPwd";
-            this.txtPwd.Size = new System.Drawing.Size(379, 28);
+            this.txtPwd.Size = new System.Drawing.Size(379, 26);
             this.txtPwd.TabIndex = 7;
-            this.txtPwd.Text = "061740";
+            this.txtPwd.Text = "eStamp@2020!06";
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(99, 72);
+            this.txtUserName.Location = new System.Drawing.Point(99, 80);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(379, 28);
+            this.txtUserName.Size = new System.Drawing.Size(379, 26);
             this.txtUserName.TabIndex = 8;
-            this.txtUserName.Text = "sa";
+            this.txtUserName.Text = "LASestamp";
             // 
             // btBuilder
             // 
-            this.btBuilder.Location = new System.Drawing.Point(924, 578);
+            this.btBuilder.Location = new System.Drawing.Point(924, 642);
             this.btBuilder.Name = "btBuilder";
-            this.btBuilder.Size = new System.Drawing.Size(176, 41);
+            this.btBuilder.Size = new System.Drawing.Size(176, 46);
             this.btBuilder.TabIndex = 9;
             this.btBuilder.Text = "生成";
             this.btBuilder.UseVisualStyleBackColor = true;
@@ -150,9 +151,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(584, 17);
+            this.label5.Location = new System.Drawing.Point(584, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 18);
+            this.label5.Size = new System.Drawing.Size(105, 20);
             this.label5.TabIndex = 11;
             this.label5.Text = "数据库列表：";
             // 
@@ -160,29 +161,29 @@
             // 
             this.cbDBList.FormattingEnabled = true;
             this.cbDBList.Items.AddRange(new object[] {
-            "name"});
-            this.cbDBList.Location = new System.Drawing.Point(566, 72);
+            "LASeStamp_Dev"});
+            this.cbDBList.Location = new System.Drawing.Point(566, 80);
             this.cbDBList.Name = "cbDBList";
-            this.cbDBList.Size = new System.Drawing.Size(176, 26);
+            this.cbDBList.Size = new System.Drawing.Size(176, 28);
             this.cbDBList.TabIndex = 12;
             this.cbDBList.SelectedIndexChanged += new System.EventHandler(this.cbDBList_SelectedIndexChanged);
             // 
             // lbTableList
             // 
             this.lbTableList.FormattingEnabled = true;
-            this.lbTableList.ItemHeight = 18;
-            this.lbTableList.Location = new System.Drawing.Point(12, 399);
+            this.lbTableList.ItemHeight = 20;
+            this.lbTableList.Location = new System.Drawing.Point(12, 443);
             this.lbTableList.Name = "lbTableList";
             this.lbTableList.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lbTableList.Size = new System.Drawing.Size(813, 418);
+            this.lbTableList.Size = new System.Drawing.Size(813, 464);
             this.lbTableList.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 369);
+            this.label6.Location = new System.Drawing.Point(12, 410);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 18);
+            this.label6.Size = new System.Drawing.Size(57, 20);
             this.label6.TabIndex = 14;
             this.label6.Text = "表名：";
             // 
@@ -196,29 +197,31 @@
             this.dbPannel.Controls.Add(this.txtPwd);
             this.dbPannel.Controls.Add(this.label2);
             this.dbPannel.Controls.Add(this.label3);
-            this.dbPannel.Location = new System.Drawing.Point(12, 90);
+            this.dbPannel.Location = new System.Drawing.Point(12, 100);
             this.dbPannel.Name = "dbPannel";
-            this.dbPannel.Size = new System.Drawing.Size(781, 185);
+            this.dbPannel.Size = new System.Drawing.Size(781, 206);
             this.dbPannel.TabIndex = 15;
             // 
             // rbSQLServer
             // 
             this.rbSQLServer.AutoSize = true;
-            this.rbSQLServer.Location = new System.Drawing.Point(29, 27);
+            this.rbSQLServer.Checked = true;
+            this.rbSQLServer.Location = new System.Drawing.Point(29, 30);
             this.rbSQLServer.Name = "rbSQLServer";
-            this.rbSQLServer.Size = new System.Drawing.Size(114, 22);
+            this.rbSQLServer.Size = new System.Drawing.Size(112, 24);
             this.rbSQLServer.TabIndex = 16;
+            this.rbSQLServer.TabStop = true;
             this.rbSQLServer.Text = "SQLServer";
             this.rbSQLServer.UseVisualStyleBackColor = true;
             this.rbSQLServer.CheckedChanged += new System.EventHandler(this.rbSQLServer_CheckedChanged);
             // 
             // rbPDM
             // 
+            this.rbPDM.AutoCheck = false;
             this.rbPDM.AutoSize = true;
-            this.rbPDM.Checked = true;
-            this.rbPDM.Location = new System.Drawing.Point(199, 27);
+            this.rbPDM.Location = new System.Drawing.Point(199, 30);
             this.rbPDM.Name = "rbPDM";
-            this.rbPDM.Size = new System.Drawing.Size(60, 22);
+            this.rbPDM.Size = new System.Drawing.Size(69, 24);
             this.rbPDM.TabIndex = 19;
             this.rbPDM.TabStop = true;
             this.rbPDM.Text = "PMD";
@@ -228,9 +231,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 43);
+            this.label7.Location = new System.Drawing.Point(9, 48);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 18);
+            this.label7.Size = new System.Drawing.Size(73, 20);
             this.label7.TabIndex = 20;
             this.label7.Text = "数据源：";
             // 
@@ -238,43 +241,42 @@
             // 
             this.panel1.Controls.Add(this.rbPDM);
             this.panel1.Controls.Add(this.rbSQLServer);
-            this.panel1.Location = new System.Drawing.Point(95, 22);
+            this.panel1.Location = new System.Drawing.Point(95, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(534, 62);
+            this.panel1.Size = new System.Drawing.Size(534, 69);
             this.panel1.TabIndex = 21;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 295);
+            this.label8.Location = new System.Drawing.Point(9, 328);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 18);
+            this.label8.Size = new System.Drawing.Size(89, 20);
             this.label8.TabIndex = 22;
             this.label8.Text = "存放路径：";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // txtPdm
             // 
-            this.txtPdm.Location = new System.Drawing.Point(903, 43);
+            this.txtPdm.Location = new System.Drawing.Point(903, 48);
             this.txtPdm.Name = "txtPdm";
-            this.txtPdm.Size = new System.Drawing.Size(263, 28);
+            this.txtPdm.Size = new System.Drawing.Size(263, 26);
             this.txtPdm.TabIndex = 25;
-            this.txtPdm.Text = "C:\\Work\\和弘\\HHCRM\\pdm\\HHCRM.pdm";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(795, 43);
+            this.label9.Location = new System.Drawing.Point(795, 48);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 18);
+            this.label9.Size = new System.Drawing.Size(92, 20);
             this.label9.TabIndex = 24;
             this.label9.Text = "PDM路径：";
             // 
             // btnPdm
             // 
-            this.btnPdm.Location = new System.Drawing.Point(924, 90);
+            this.btnPdm.Location = new System.Drawing.Point(924, 100);
             this.btnPdm.Name = "btnPdm";
-            this.btnPdm.Size = new System.Drawing.Size(138, 44);
+            this.btnPdm.Size = new System.Drawing.Size(138, 49);
             this.btnPdm.TabIndex = 13;
             this.btnPdm.Text = "选择PMD";
             this.btnPdm.UseVisualStyleBackColor = true;
@@ -282,9 +284,9 @@
             // 
             // btnChooseFile
             // 
-            this.btnChooseFile.Location = new System.Drawing.Point(569, 285);
+            this.btnChooseFile.Location = new System.Drawing.Point(569, 317);
             this.btnChooseFile.Name = "btnChooseFile";
-            this.btnChooseFile.Size = new System.Drawing.Size(185, 39);
+            this.btnChooseFile.Size = new System.Drawing.Size(185, 43);
             this.btnChooseFile.TabIndex = 26;
             this.btnChooseFile.Text = "选择生成文件路径";
             this.btnChooseFile.UseVisualStyleBackColor = true;
@@ -292,11 +294,11 @@
             // 
             // txtCodePath
             // 
-            this.txtCodePath.Location = new System.Drawing.Point(146, 285);
+            this.txtCodePath.Location = new System.Drawing.Point(146, 317);
             this.txtCodePath.Name = "txtCodePath";
-            this.txtCodePath.Size = new System.Drawing.Size(379, 28);
+            this.txtCodePath.Size = new System.Drawing.Size(379, 26);
             this.txtCodePath.TabIndex = 27;
-            this.txtCodePath.Text = "C:\\Users\\marks\\Desktop\\Test\\";
+            this.txtCodePath.Text = "C:\\Users\\GuangHaoYang\\Documents\\GitHub\\LASeStamp_Net\\LASeStamp\\Entity\\0809\\";
             // 
             // openFileDialog
             // 
@@ -305,9 +307,9 @@
             // 
             // btnNoSelect
             // 
-            this.btnNoSelect.Location = new System.Drawing.Point(924, 500);
+            this.btnNoSelect.Location = new System.Drawing.Point(924, 556);
             this.btnNoSelect.Name = "btnNoSelect";
-            this.btnNoSelect.Size = new System.Drawing.Size(176, 41);
+            this.btnNoSelect.Size = new System.Drawing.Size(176, 46);
             this.btnNoSelect.TabIndex = 28;
             this.btnNoSelect.Text = "全不选";
             this.btnNoSelect.UseVisualStyleBackColor = true;
@@ -315,9 +317,9 @@
             // 
             // btnAllSelect
             // 
-            this.btnAllSelect.Location = new System.Drawing.Point(924, 430);
+            this.btnAllSelect.Location = new System.Drawing.Point(924, 478);
             this.btnAllSelect.Name = "btnAllSelect";
-            this.btnAllSelect.Size = new System.Drawing.Size(176, 41);
+            this.btnAllSelect.Size = new System.Drawing.Size(176, 46);
             this.btnAllSelect.TabIndex = 29;
             this.btnAllSelect.Text = "全选";
             this.btnAllSelect.UseVisualStyleBackColor = true;
@@ -325,9 +327,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1235, 852);
+            this.ClientSize = new System.Drawing.Size(1235, 947);
             this.Controls.Add(this.btnAllSelect);
             this.Controls.Add(this.btnNoSelect);
             this.Controls.Add(this.txtCodePath);
